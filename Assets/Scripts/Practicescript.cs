@@ -37,7 +37,9 @@ public class Practicescript : MonoBehaviour
         Debug.Log("Das letzte Element von array3 hat den Wert: " + array3[array3.Length - 1]);
         Debug.Log("Das letzte Element von array4 hat den Wert: " + array4[array4.Length - 1]);
         Debug.Log("Name des ersten GameObjects: " + arrayColoredImagesRed[0].name);
-        6
+
+
+        PrintElements(array4);
 
 
     }
@@ -45,6 +47,16 @@ public class Practicescript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+
+    public void PrintElements(string[] x)
+    {
+        for (int i = 0; i < x.Length; i++)
+        {
+            Debug.Log("Element Nummer:" + i + " hat den Wert: " + x[i]);
+        }
         
     }
 }
